@@ -125,13 +125,8 @@ int prnt_hexa_upper(va_list types, char buffer[],
  * @precision: Precision specification
  * @size: Size specifier
  * Return: Number of chars printed
-<<<<<<< HEAD
 */
-int print_hexadec(va_list types, char map_to[], char buffer[],
-=======
- */
 int prnt_hexadec(va_list types, char map_to[], char buffer[],
->>>>>>> a700bcacf116ad5f3abde4e4eef5d8403a8a6049
 	int flags, char flag_ch, int width, int precision, int size)
 {
 	int i = BUFF_SIZE - 2;

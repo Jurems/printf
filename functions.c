@@ -69,12 +69,8 @@ int prnt_string(va_list types, char buffer[],
 			return (width);
 		}
 	}
-<<<<<<< HEAD
 
-return (write(1,str,lent));
-=======
 	return (write(1, str, lent));
->>>>>>> a700bcacf116ad5f3abde4e4eef5d8403a8a6049
 }
 /****************** PRINT PERCENT SIGN (%) *****************/
 /**
@@ -188,4 +184,3 @@ int prnt_binary(va_list types, char buffer[],
 	}
 	return (count);
 }
-

@@ -3,10 +3,10 @@
 void output_buffer(char buffer[], int *buff_indx);
 
 /**
- * _printf - Printf function by Jenna and Kenile
+ * _printf - Printf function by Jenna and Kenile
  * @format: the string that contains the text to be written
  * Return: Printed items
- */
+*/
 int _printf(const char *format, ...)
 {
 	int i, printed_item = 0, printed_char = 0;
@@ -42,9 +42,7 @@ int _printf(const char *format, ...)
 			if (printed_item == -1)
 				return (-1);
 			printed_char = printed_char + printed_item;
-		
-	}
-
+		}
 	output_buffer(buffer, &buff_indx);
 
 	va_end(list);
@@ -53,10 +51,10 @@ int _printf(const char *format, ...)
 }
 
 /**
- * output_buffer - Prints the contents of the buffer
+ * output_buffer - Prints the contents of the buffer
  * @buffer: An array of chars
  * @buff_indx: Index to add next char aka the length
- */
+*/
 void output_buffer(char buffer[], int *buff_indx)
 {
 	if (*buff_indx > 0)

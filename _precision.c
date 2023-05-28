@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * _precision - Calculates the precision
+ * _precision - Calculates the precision
  * @format: Formatted string
  * @i: List of arguments to print.
  * @list: list of arguments.
- * Return: Precision.
- */
+ * Return: Precision
+*/
 int _precision(const char *format, int *i, va_list list)
 {
 	int curr_i = *i + 1;

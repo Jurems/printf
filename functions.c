@@ -3,7 +3,7 @@
 /************************* PRINT CHAR (c) *************************/
 
 /**
- * prnt_char - Prints a char
+ * prnt_char - Prints a char
  * @types: List of arguments
  * @buffer: array to handle print
  * @flags:  active flags
@@ -11,7 +11,7 @@
  * @precision: Precision specification
  * @size: Size specifier
  * Return: Number of chars printed
- */
+*/
 int prnt_char(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
@@ -19,9 +19,9 @@ int prnt_char(va_list types, char buffer[],
 
 	return (handle_write_char(c, buffer, flags, width, precision, size));
 }
-/************************* PRINT A STRING (s) *************************/
+/*********************** PRINT A STRING (s) *************************/
 /**
- * prnt_string - Prints a string
+ * prnt_string - Prints a string
  * @types: List of arguments
  * @buffer: array to handle print
  * @flags: active flags
@@ -29,7 +29,7 @@ int prnt_char(va_list types, char buffer[],
  * @precision: Precision specification
  * @size: Size specifier
  * Return: Number of chars printed
- */
+*/
 int prnt_string(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
@@ -73,11 +73,11 @@ int prnt_string(va_list types, char buffer[],
 		}
 	}
 
-	return (write(1, str, lent));
+return (write(1,str,lent));
 }
-/************************* PRINT PERCENT SIGN (%) *************************/
+/****************** PRINT PERCENT SIGN (%) *****************/
 /**
- * prnt_percent - Prints a percent sign
+ * prnt_percent - Prints a percent sign
  * @types: List of arguments
  * @buffer: array to handle print
  * @flags: active flags
@@ -85,7 +85,7 @@ int prnt_string(va_list types, char buffer[],
  * @precision: Precision specification
  * @size: Size specifier
  * Return: Number of chars printed
- */
+*/
 int prnt_percent(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
@@ -100,7 +100,7 @@ int prnt_percent(va_list types, char buffer[],
 
 /************************* PRINT INT (d) *************************/
 /**
- * prnt_int - Print integer
+ * prnt_int - Print integer
  * @types: List of arguments
  * @buffer: array to handle print
  * @flags: active flags
@@ -108,7 +108,7 @@ int prnt_percent(va_list types, char buffer[],
  * @precision: Precision specification
  * @size: Size specifier
  * Return: Number of chars printed
- */
+*/
 int prnt_int(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
@@ -134,7 +134,7 @@ int prnt_int(va_list types, char buffer[],
 	while (num > 0)
 	{
 		buffer[i--] = (num % 10) + '0';
-		num = num /10;
+		num = num / 10;
 	}
 
 	i++;
@@ -144,15 +144,15 @@ int prnt_int(va_list types, char buffer[],
 
 /************************* PRINT BINARY *************************/
 /**
- * prnt_binary - Prints an unsigned number
+ * prnt_binary - Prints an unsigned number
  * @types: List of arguments
  * @buffer: array to handle print
  * @flags: active flags
  * @width: get width
  * @precision: Precision specification
  * @size: Size specifier
- * Return: Numbers of char printed.
- */
+ * Return: Numbers of char printed
+*/
 int prnt_binary(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {

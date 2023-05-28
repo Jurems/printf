@@ -48,13 +48,10 @@ int prnt_string(va_list types, char buffer[],
 		if (precision >= 6)
 			str = "      ";
 	}
-
 	while (str[lent] != '\0')
 		lent++;
-
 	if (precision >= 0 && precision < lent)
 		lent = precision;
-
 	if (width > lent)
 	{
 		if (flags & F_MINUS)
@@ -72,8 +69,12 @@ int prnt_string(va_list types, char buffer[],
 			return (width);
 		}
 	}
+<<<<<<< HEAD
 
 return (write(1,str,lent));
+=======
+	return (write(1, str, lent));
+>>>>>>> a700bcacf116ad5f3abde4e4eef5d8403a8a6049
 }
 /****************** PRINT PERCENT SIGN (%) *****************/
 /**

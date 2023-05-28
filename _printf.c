@@ -43,6 +43,12 @@ int _printf(const char *format, ...)
 				return (-1);
 			printed_char = printed_char + printed_item;
 		}
+<<<<<<< HEAD
+=======
+		
+	}
+
+>>>>>>> a700bcacf116ad5f3abde4e4eef5d8403a8a6049
 	output_buffer(buffer, &buff_indx);
 
 	va_end(list);
@@ -62,4 +68,3 @@ void output_buffer(char buffer[], int *buff_indx)
 
 	*buff_indx = 0;
 }
-

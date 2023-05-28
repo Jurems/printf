@@ -48,13 +48,10 @@ int prnt_string(va_list types, char buffer[],
 		if (precision >= 6)
 			str = "      ";
 	}
-
 	while (str[lent] != '\0')
 		lent++;
-
 	if (precision >= 0 && precision < lent)
 		lent = precision;
-
 	if (width > lent)
 	{
 		if (flags & F_MINUS)
@@ -72,7 +69,6 @@ int prnt_string(va_list types, char buffer[],
 			return (width);
 		}
 	}
-
 	return (write(1, str, lent));
 }
 /************************* PRINT PERCENT SIGN (%) *************************/
@@ -134,7 +130,7 @@ int prnt_int(va_list types, char buffer[],
 	while (num > 0)
 	{
 		buffer[i--] = (num % 10) + '0';
-		num = num /10;
+		num = num / 10;
 	}
 
 	i++;

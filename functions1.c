@@ -91,7 +91,7 @@ int prnt_octal(va_list types, char buffer[],
 int prnt_hexadecimal(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
-	return (print_hexadec(types, "0123456789abcdef", buffer,
+	return (prnt_hexadec(types, "0123456789abcdef", buffer,
 		flags, 'x', width, precision, size));
 }
 
@@ -126,7 +126,7 @@ int prnt_hexa_upper(va_list types, char buffer[],
  * @size: Size specifier
  * Return: Number of chars printed
  */
-int print_hexadec(va_list types, char map_to[], char buffer[],
+int prnt_hexadec(va_list types, char map_to[], char buffer[],
 	int flags, char flag_ch, int width, int precision, int size)
 {
 	int i = BUFF_SIZE - 2;

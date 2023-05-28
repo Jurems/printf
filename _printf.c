@@ -64,4 +64,3 @@ void output_buffer(char buffer[], int *buff_indx)
 
 	*buff_indx = 0;
 }
-

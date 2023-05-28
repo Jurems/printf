@@ -109,7 +109,7 @@ int prnt_hexadecimal(va_list types, char buffer[],
 int prnt_hexa_upper(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
-	return (print_hexadec(types, "0123456789ABCDEF", buffer,
+	return (prnt_hexadec(types, "0123456789ABCDEF", buffer,
 		flags, 'X', width, precision, size));
 }
 

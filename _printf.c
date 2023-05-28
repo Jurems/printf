@@ -42,6 +42,7 @@ int _printf(const char *format, ...)
 			if (printed_item == -1)
 				return (-1);
 			printed_char = printed_char + printed_item;
+		}
 		
 	}
 
